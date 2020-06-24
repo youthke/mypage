@@ -1,10 +1,10 @@
 import React from 'react'
-import { Layout, Menu} from "antd";
-import { Link } from "react-scroll"
+import {Layout, Menu} from "antd";
 
 
 export const Header = () =>{
     const { Header } = Layout;
+    const {SubMenu} = Menu;
     return(
         <Header>
             <Menu
@@ -12,19 +12,20 @@ export const Header = () =>{
                 mode={"horizontal"}
             >
                 <Menu.Item>
-                    <Link to={"about"}>
-                        about
-                    </Link>
+                    <a href={"/mypage"}>about</a>
                 </Menu.Item>
+                <SubMenu
+                    title={
+                        <span>
+                            <span>products</span>
+                        </span>
+                    }>
+                    <Menu.Item>
+                        <a href={"/mypage/products/violet"}>violet</a>
+                    </Menu.Item>
+                </SubMenu>
                 <Menu.Item>
-                    <Link to={"work"}>
-                        work
-                    </Link>
-                </Menu.Item>
-                <Menu.Item>
-                    <Link to={"contact"}>
-                        contact
-                    </Link>
+                    <a>Contact</a>
                 </Menu.Item>
             </Menu>
         </Header>
