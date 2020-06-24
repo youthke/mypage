@@ -25,7 +25,7 @@ export const Header = () =>{
                     </Menu.Item>
                 </SubMenu>
                 <Menu.Item>
-                    <a>Contact</a>
+                    <a href={"/mypage/contact"}>Contact</a>
                 </Menu.Item>
             </Menu>
         </Header>

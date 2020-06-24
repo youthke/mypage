@@ -6,6 +6,7 @@ import {Layout} from "antd";
 import {About} from "./component/About";
 import "./index.css"
 import {Violet} from "./component/products/Violet";
+import {Contact} from "./component/Contact";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Router>
               <Switch>
                   <Route path={"/mypage"} component={About} exact/>
+                  <Route path={"/mypage/contact"} component={Contact} exact/>
                   <Route path={"/mypage/products/violet"} component={Violet}/>
               </Switch>
           </Router>
