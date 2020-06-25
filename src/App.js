@@ -13,7 +13,7 @@ function App() {
   return (
       <Layout>
           <Header/>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
               <Switch>
                   <Route path={"/mypage"} component={About} exact/>
                   <Route path={"/mypage/contact"} component={Contact} exact/>
