@@ -1,5 +1,6 @@
 import React from 'react'
 import {Layout, Menu} from "antd";
+import {Link} from "react-router-dom"
 
 
 export const Header = () =>{
@@ -12,7 +13,7 @@ export const Header = () =>{
                 mode={"horizontal"}
             >
                 <Menu.Item>
-                    <a href={"/mypage"}>about</a>
+                    <Link to={"/"}>about</Link>
                 </Menu.Item>
                 <SubMenu
                     title={
@@ -21,11 +22,11 @@ export const Header = () =>{
                         </span>
                     }>
                     <Menu.Item>
-                        <a href={"/mypage/products/violet"}>violet</a>
+                        <Link to={"/products/violet"}>violet</Link>
                     </Menu.Item>
                 </SubMenu>
                 <Menu.Item>
-                    <a href={"/mypage/contact"}>Contact</a>
+                    <Link to={"/contact"}>Contact</Link>
                 </Menu.Item>
             </Menu>
         </Header>

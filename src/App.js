@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
+import {HashRouter as Router,Route, Switch} from 'react-router-dom'
 
 import { Header } from "./component/Header";
 import {Layout} from "antd";
@@ -12,12 +12,12 @@ import {Contact} from "./component/Contact";
 function App() {
   return (
       <Layout>
-          <Header/>
-          <Router basename={process.env.PUBLIC_URL}>
+          <Router>
+              <Header/>
               <Switch>
-                  <Route path={"/mypage"} component={About} exact/>
-                  <Route path={"/mypage/contact"} component={Contact} exact/>
-                  <Route path={"/mypage/products/violet"} component={Violet}/>
+                  <Route path={"/contact"} component={Contact}/>
+                  <Route path={"/products/violet"} component={Violet}/>
+                  <Route path={"/"} component={About}/>
               </Switch>
           </Router>
       </Layout>
