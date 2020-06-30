@@ -7,6 +7,7 @@ import {About} from "./component/About";
 import "./index.css"
 import {Violet} from "./component/products/Violet";
 import {Contact} from "./component/Contact";
+import {Questack} from "./component/products/Questack";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Switch>
                   <Route path={"/contact"} component={Contact}/>
                   <Route path={"/products/violet"} component={Violet}/>
+                  <Route path={"/products/questack"} component={Questack}/>
                   <Route path={"/"} component={About}/>
               </Switch>
           </Router>

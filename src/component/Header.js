@@ -24,6 +24,9 @@ export const Header = () =>{
                     <Menu.Item>
                         <Link to={"/products/violet"}>violet</Link>
                     </Menu.Item>
+                    <Menu.Item>
+                        <Link to={"/products/questack"}>questack</Link>
+                    </Menu.Item>
                 </SubMenu>
                 <Menu.Item>
                     <Link to={"/contact"}>Contact</Link>
