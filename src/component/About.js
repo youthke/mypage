@@ -33,7 +33,7 @@ export const About = () =>{
                                     基本情報
                                 </Title>
                                 <p>名前: 浅野 耀介</p>
-                                <p>年齢: 22</p>
+                                <p>年齢: 24</p>
                                 <p>趣味: ぷよぷよ, 散歩</p>
                                 <Title level={2} style={{ marginLeft: 10, marginBottom: 25 }}>
                                     技術
